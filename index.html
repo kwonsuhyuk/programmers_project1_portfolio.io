@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      header {
+        background-color: black;
+        height: 100px;
+      }
+      footer {
+        background-color: black;
+        height: 100px;
+      }
+      main {
+        margin: 30px 20vw;
+      }
+
+      .project_container {
+        border: 1px solid black;
+        height: auto;
+      }
+
+      .project_box {
+        display: flex;
+        border: 2px solid gray;
+        margin: 3px;
+      }
+      .project_box img {
+        width: 40%;
+        height: 600px;
+      }
+      .project_box .project_decription {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 60%;
+        height: 600px;
+      }
+      .profile {
+        text-align: center;
+      }
+      .profile_link a {
+        background-color: black;
+        color: white;
+        padding: 3px 5px;
+        text-decoration: none;
+        border-radius: 20px;
+        margin-right: 15px;
+      }
+      .profile_link a:hover {
+        background-color: white;
+        color: black;
+      }
+      button {
+        padding: 10px 15px;
+        border-radius: 20px;
+        background-color: black;
+        color: white;
+        border: none;
+      }
+
+      button:hover {
+        background-color: white;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <div class="profile">
+        <h1>권수혁의 포트폴리오</h1>
+        <div class="profile_link">
+          <a href="">GitHub</a>
+          <a href="">Blog</a>
+          <a href="">Email</a>
+        </div>
+        <p>
+          열심히 노력하는 개발자 권수혁입니다. 제 프로젝트들을 소개하겠습니다.
+        </p>
+      </div>
+      <div class="project_container">
+        <div class="project_box">
+          <img src="./img/projectImg1.png" alt="" />
+          <div class="project_decription">
+            <h1>미니 스탑워치</h1>
+            <p>
+              키보드와 마우스를 이용해서 간단하게 조작할 수 있는 미니 스탑워치
+              웹을 제작하였습니다.
+            </p>
+            <button>자세히 보러가기</button>
+          </div>
+        </div>
+        <div class="project_box">
+          <img src="./img/projectImg2.png" alt="" />
+          <div class="project_decription">
+            <h1>우주 사진 검색 웹</h1>
+            <p>나사 api를 이용해서 우주 사진 검색 웹을 만들었습니다.</p>
+            <button>자세히 보러가기</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+</html>
